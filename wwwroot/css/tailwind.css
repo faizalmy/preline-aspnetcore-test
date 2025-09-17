@@ -10,6 +10,7 @@
     --color-red-100: oklch(0.936 0.032 17.717);
     --color-red-800: oklch(0.444 0.177 26.899);
     --color-green-100: oklch(0.962 0.044 156.743);
+    --color-green-600: oklch(0.627 0.194 149.214);
     --color-green-800: oklch(0.448 0.119 151.328);
     --color-blue-50: oklch(0.97 0.014 254.604);
     --color-blue-100: oklch(0.932 0.032 255.585);
@@ -1210,6 +1211,186 @@
       &:focus {
         color: var(--color-neutral-300);
       }
+    }
+  }
+  .hs-dropdown-open\:rotate-180 {
+    &.hs-dropdown-menu.open {
+      rotate: 180deg;
+    }
+    .hs-dropdown.open>& {
+      rotate: 180deg;
+    }
+    .hs-dropdown.open>.hs-dropdown-toggle & {
+      rotate: 180deg;
+    }
+    .hs-dropdown.open>.hs-dropdown-menu>& {
+      rotate: 180deg;
+    }
+  }
+  .hs-dropdown-open\:opacity-100 {
+    &.hs-dropdown-menu.open {
+      opacity: 100%;
+    }
+    .hs-dropdown.open>& {
+      opacity: 100%;
+    }
+    .hs-dropdown.open>.hs-dropdown-toggle & {
+      opacity: 100%;
+    }
+    .hs-dropdown.open>.hs-dropdown-menu>& {
+      opacity: 100%;
+    }
+  }
+  .hs-accordion-active\:block {
+    &.hs-accordion.active {
+      display: block;
+    }
+    .hs-accordion.active>& {
+      display: block;
+    }
+    .hs-accordion.active>.hs-accordion-toggle & {
+      display: block;
+    }
+    .hs-accordion.active>.hs-accordion-heading>.hs-accordion-toggle & {
+      display: block;
+    }
+    &.hs-accordion-toggle {
+      .hs-accordion.active>& {
+        display: block;
+      }
+    }
+    &.hs-accordion-toggle {
+      .hs-accordion.active>.hs-accordion-heading>& {
+        display: block;
+      }
+    }
+    &.hs-accordion-force-active {
+      .hs-accordion.active & {
+        display: block;
+      }
+    }
+  }
+  .hs-accordion-active\:hidden {
+    &.hs-accordion.active {
+      display: none;
+    }
+    .hs-accordion.active>& {
+      display: none;
+    }
+    .hs-accordion.active>.hs-accordion-toggle & {
+      display: none;
+    }
+    .hs-accordion.active>.hs-accordion-heading>.hs-accordion-toggle & {
+      display: none;
+    }
+    &.hs-accordion-toggle {
+      .hs-accordion.active>& {
+        display: none;
+      }
+    }
+    &.hs-accordion-toggle {
+      .hs-accordion.active>.hs-accordion-heading>& {
+        display: none;
+      }
+    }
+    &.hs-accordion-force-active {
+      .hs-accordion.active & {
+        display: none;
+      }
+    }
+  }
+  .hs-overlay-open\:mt-7 {
+    &.open {
+      margin-top: calc(var(--spacing) * 7);
+    }
+    .open & {
+      margin-top: calc(var(--spacing) * 7);
+    }
+  }
+  .hs-overlay-open\:opacity-100 {
+    &.open {
+      opacity: 100%;
+    }
+    .open & {
+      opacity: 100%;
+    }
+  }
+  .hs-overlay-open\:duration-500 {
+    &.open {
+      --tw-duration: 500ms;
+      transition-duration: 500ms;
+    }
+    .open & {
+      --tw-duration: 500ms;
+      transition-duration: 500ms;
+    }
+  }
+  .hs-selected\:block {
+    &.selected {
+      display: block;
+    }
+    .selected & {
+      display: block;
+    }
+  }
+  .hs-selected\:bg-gray-100 {
+    &.selected {
+      background-color: var(--color-gray-100);
+    }
+    .selected & {
+      background-color: var(--color-gray-100);
+    }
+  }
+  .dark\:hs-selected\:bg-gray-700 {
+    @media (prefers-color-scheme: dark) {
+      &.selected {
+        background-color: var(--color-gray-700);
+      }
+      .selected & {
+        background-color: var(--color-gray-700);
+      }
+    }
+  }
+  .dark\:hs-selected\:bg-neutral-800 {
+    @media (prefers-color-scheme: dark) {
+      &.selected {
+        background-color: var(--color-neutral-800);
+      }
+      .selected & {
+        background-color: var(--color-neutral-800);
+      }
+    }
+  }
+  .hs-select-disabled\:pointer-events-none {
+    &.disabled {
+      pointer-events: none;
+    }
+    .disabled & {
+      pointer-events: none;
+    }
+  }
+  .hs-select-disabled\:opacity-50 {
+    &.disabled {
+      opacity: 50%;
+    }
+    .disabled & {
+      opacity: 50%;
+    }
+  }
+  .hs-combo-box-selected\:block {
+    &.selected {
+      display: block;
+    }
+    .selected & {
+      display: block;
+    }
+  }
+  .hs-file-upload-complete\:bg-green-600 {
+    &.complete {
+      background-color: var(--color-green-600);
+    }
+    .complete & {
+      background-color: var(--color-green-600);
     }
   }
   .\[\&\:\:-webkit-scrollbar\]\:w-2 {
