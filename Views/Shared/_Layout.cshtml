@@ -39,6 +39,15 @@
         </div>
     </footer>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/preline.js" asp-append-version="true"></script>
+    <script>
+        // Initialize Preline components
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.HSStaticMethods) {
+                window.HSStaticMethods.autoInit();
+            }
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
