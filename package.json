@@ -121,7 +121,6 @@
   "scripts": {
     "build-css": "npx @tailwindcss/cli -i ./src/input.css -o ./wwwroot/css/tailwind.css",
     "watch-css": "npx @tailwindcss/cli -i ./src/input.css -o ./wwwroot/css/tailwind.css --watch",
-    "copy-preline": "cp node_modules/preline/dist/preline.js wwwroot/js/",
     "dev": "npm run watch-css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
